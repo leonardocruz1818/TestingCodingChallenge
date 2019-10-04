@@ -75,12 +75,15 @@ Note: Make sure that before running any of these commands you are located in the
 
 In order to compile and run the test cases for this application please follow these steps:
 1) Compile your Java class by running this command: 
+
 	javac SecureworksCodingChallenge.java 
 
 2) Run the Java application to provide the result by running this command:
+
 	java SecureworksCodingChallenge
 	
 3) Once the application has been verified that it's providing the correct result, compile the JUnit classs by running this command:
+	
 	MacOS/Linux:
 	
 	javac -cp junit-4.12.jar:. *.java
@@ -90,6 +93,7 @@ In order to compile and run the test cases for this application please follow th
 	javac -cp junit-4.12.jar;. *.java
 	
 4) Run the JUnit tests by running this command:
+	
 	MacOS/Linux:
 	
 	java -cp junit-4.12.jar:hamcrest-core-1.3.jar:. org.junit.runner.JUnitCore SecureworksCodingChallengeTest
