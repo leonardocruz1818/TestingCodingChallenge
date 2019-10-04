@@ -82,19 +82,25 @@ In order to compile and run the test cases for this application please follow th
 	
 3) Once the application has been verified that it's providing the correct result, compile the JUnit classs by running this command:
 	MacOS/Linux:
+	
 	javac -cp junit-4.12.jar:. *.java
+	
 	Windows:
+	
 	javac -cp junit-4.12.jar;. *.java
 	
 4) Run the JUnit tests by running this command:
 	MacOS/Linux:
+	
 	java -cp junit-4.12.jar:hamcrest-core-1.3.jar:. org.junit.runner.JUnitCore SecureworksCodingChallengeTest
 	
 	Windows:
+	
 	java -cp junit-4.12.jar;hamcrest-core-1.3.jar;. org.junit.runner.JUnitCore SecureworksCodingChallengeTest
 	
 NOTE: For simplicity purposes, I did not use any tool or framework other than those that were essential to create and run the test cases. Unfortunately, for this reason we cannot create Test Reports as we usually do when we have a complete environment setup correctly. In prior experiences, I've generated JUnit style XML reports for Jenkins. If you wish to see the output of these test cases in a regular file, please pipe it to a text file as it is usually done through the terminal by running this command:
 	MacOS/Linux:
+	
 	java -cp junit-4.12.jar:hamcrest-core1.3.jar:. org.junit.runner.JUnitCore SecureworkCodingChallengeTest > testReport.txt
 	
 	Windows:
